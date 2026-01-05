@@ -1,0 +1,96 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.org/rres/v0.1/schema",
+  "title": "RRES v0.1 — Reasonable Reliance Evidence Record",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "rres_version",
+    "record_type",
+    "decision_context",
+    "controls_applied",
+    "outcomes",
+    "record_hash"
+  ],
+  "properties": {
+    "rres_version": {
+      "type": "string",
+      "const": "0.1"
+    },
+    "record_type": {
+      "type": "string",
+      "enum": [
+        "onboarding",
+        "high_value_authorization"
+      ]
+    },
+    "decision_context": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "timestamp",
+        "jurisdiction"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time"
+        },
+        "jurisdiction": {
+          "type": "string"
+        }
+      }
+    },
+    "controls_applied": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "control_id",
+          "control_type",
+          "result"
+        ],
+        "properties": {
+          "control_id": {
+            "type": "string"
+          },
+          "control_type": {
+            "type": "string"
+          },
+          "result": {
+            "type": "string",
+            "enum": [
+              "PASS",
+              "FAIL"
+            ]
+          }
+        }
+      }
+    },
+    "outcomes": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "final_decision"
+      ],
+      "properties": {
+        "final_decision": {
+          "type": "string",
+          "enum": [
+            "ALLOW",
+            "DENY"
+          ]
+        }
+      }
+    },
+    "record_hash": {
+      "type": "string",
+      "pattern": "^[a-fA-F0-9]{64}$"
+    },
+    "log_integrity_signature": {
+      "type": "string"
+    }
+  }
+}
