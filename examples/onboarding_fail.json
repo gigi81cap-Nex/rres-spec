@@ -1,0 +1,13 @@
+{
+  "rres_version": "0.1",
+  "decision_type": "onboarding",
+  "decision_outcome": "FAIL",
+  "timestamp": "2026-01-04T11:45:00Z",
+  "subject_id": "user_fghij",
+  "controls_applied": [
+    "document_verification",
+    "biometric_match"
+  ],
+  "failure_reason": "document_mismatch",
+  "evidence_hash": "f1e8d9c0babc4567890abcdef123456"
+}
