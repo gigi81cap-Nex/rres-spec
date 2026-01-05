@@ -1,0 +1,13 @@
+{
+  "rres_version": "0.1",
+  "decision_type": "authorization",
+  "decision_outcome": "PASS",
+  "timestamp": "2026-01-04T12:00:00Z",
+  "subject_id": "user_12345",
+  "controls_applied": [
+    "liveness_check",
+    "device_binding",
+    "risk_threshold_check"
+  ],
+  "evidence_hash": "b3a1c6f1d9e8a0f123456789abcdef01"
+}
