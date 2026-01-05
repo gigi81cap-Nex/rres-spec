@@ -1,0 +1,13 @@
+{
+  "rres_version": "0.1",
+  "decision_type": "onboarding",
+  "decision_outcome": "PASS",
+  "timestamp": "2026-01-04T11:30:00Z",
+  "subject_id": "user_abcde",
+  "controls_applied": [
+    "document_verification",
+    "biometric_match",
+    "sanctions_screening"
+  ],
+  "evidence_hash": "abc123f1e8d9c0b4567890abcdef1234"
+}
