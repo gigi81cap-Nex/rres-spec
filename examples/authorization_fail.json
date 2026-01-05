@@ -1,0 +1,13 @@
+{
+  "rres_version": "0.1",
+  "decision_type": "authorization",
+  "decision_outcome": "FAIL",
+  "timestamp": "2026-01-04T12:05:00Z",
+  "subject_id": "user_67890",
+  "controls_applied": [
+    "liveness_check",
+    "device_binding"
+  ],
+  "failure_reason": "risk_score_exceeded",
+  "evidence_hash": "d91fbc0123e8a0f9abcdef4567890123"
+}
