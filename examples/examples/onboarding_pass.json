@@ -1,0 +1,24 @@
+{
+  "rres_version": "0.1",
+  "record_type": "onboarding",
+  "decision_context": {
+    "timestamp": "2026-01-04T09:30:00Z",
+    "jurisdiction": "EU"
+  },
+  "controls_applied": [
+    {
+      "control_id": "DOC_VERIFICATION_V2",
+      "control_type": "document_verification",
+      "result": "PASS"
+    },
+    {
+      "control_id": "SELFIE_MATCH",
+      "control_type": "biometric_match",
+      "result": "PASS"
+    }
+  ],
+  "outcomes": {
+    "final_decision": "ALLOW"
+  },
+  "record_hash": "cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+}
